@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Take notes!
+	</title>
+	<script src="jQuery/jquery-1.10.2.min.js"></script>
+    <script src="NoteApp.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var noteApp = new NoteApp();
+            noteApp.init();
+        });
+    </script>
+</head>
+<body>   
+	<div class="note-form">
+		<h2>Real-Time Notes</h2>
+
+		<div>				
+			Message: <input type="text" id="message" name="message" class="message" />
+			<input type="submit" id="submit" value="Submit" />
+		</div>
+	</div>
+	<div id="note">
+		<ul></ul>
+	</div> 
+
+	<footer>
+        <span class="connStatus "></span>
+    </footer>
+</body>
+</html>
